@@ -1,4 +1,6 @@
-import { ChevronLeft, icons } from "lucide-react"
+"use client"
+import { useRouter } from "next/navigation"
+import { ChevronLeft, UserPen } from "lucide-react"
 import { Ubuntu } from "next/font/google"
 import Button from "@/components/Button"
 import InputBox from "@/components/Input"
@@ -10,9 +12,10 @@ const ubuntu = Ubuntu({
 })
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className={`h-screen w-screen bg-white px-6 py-20 ${ubuntu.className} flex flex-col text-deftext`}>
-      <ChevronLeft className="text-deftext" />
+      <ChevronLeft className="text-deftext cursor-pointer" />
       <p className="font-bold text-3xl mt-3">LOG IN</p>
       <p className="text-base mt-2">Please sign into your existing account</p>
       <div className="mt-18"></div>
@@ -24,12 +27,12 @@ export default function Home() {
           <input type="checkbox" className="h-5 w-5 border-brcolor border-2 rounded-[5px]" />
           <p className="ml-2.5 text-[13px]">Remember Me</p>
         </div>
-        <p className="text-[13px] text-primary">Forgot Password</p>
+        <p className="text-[13px] text-primary cursor-pointer" onClick={() => {router.push("/access/forgotpass")}}>Forgot Password</p>
       </div>
-      <Button text={"LOG IN"}/>
+      <Button text={"LOG IN"} nav={"/main/hero"}/>
       <div className="w-full flex justify-center items-center space-x-[14px] mt-8">
         <p className="text-base text-deftext">Don't have an account?</p>
-        <p className="font-bold text-base text-primary">SIGN UP</p>
+        <p className="font-bold text-base text-primary cursor-pointer" onClick={() => router.push("/access/signup")}>SIGN UP</p>
       </div>
     </div>
   )
