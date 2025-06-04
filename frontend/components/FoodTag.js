@@ -5,10 +5,11 @@ const ubuntu = Ubuntu({
     display: "swap",
 })
 
-export default function FoodTag({ text }) {
+export default function FoodTag({ text, image }) {
     return (
         <div className={`${ubuntu.className} h-[60px] w-fit shrink-0 py-2 pl-2 pr-3 flex justify-center items-center shadow rounded-full space-x-3`}>
-            <div className="h-[44px] w-[44px] bg-icon rounded-full"></div>
+            {/* <div className="h-[44px] w-[44px] bg-icon rounded-full"></div> */}
+            <img src={image} className="h-[44px] w-[44px] rounded-full" />
             <p className="text-sm font-bold text-[#32343E]">{text}</p>
         </div>
     )
