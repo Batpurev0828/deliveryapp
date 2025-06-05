@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation"
 import { ChevronLeft, Plus } from "lucide-react"
 import PaymentMethod from "@/components/PaymentMethod"
 import { useState } from "react"
+import Button from "@/components/Button"
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
@@ -48,19 +49,28 @@ export default function Home() {
               <p className="text-base text-[#31343D] ml-[5px]">436</p>
             </div>
           </div>
+          <button
+            className="w-full h-[62px] cursor-pointer bg-white border-2 text-primary border-primary rounded-[10px] mt-4 flex justify-center items-center hover:bg-primary hover:text-white transition-colors duration-300"
+            onClick={() => {router.push("/main/addcard")}}
+          >
+            <div className="h-fit w-fit flex">
+              <Plus className="w-5 h-5 mr-2" />
+              <p className="text-sm font-bold">ADD NEW</p>
+            </div>
+          </button>
         </div>
+
       )}
 
-      <button
-        className="w-full h-[62px] bg-white border-2 text-primary border-primary rounded-[10px] mt-4 flex justify-center items-center hover:bg-primary hover:text-white transition-colors duration-300"
-
-      >
-        <div className="h-fit w-fit flex">
-          <Plus className="w-5 h-5 mr-2" />
-          <p className="text-sm font-bold">ADD NEW</p>
+      <div className="mt-auto absolute bottom-0 left-0 w-full h-[184px] bg-icon rounded-t-3xl p-6">
+        <div className="h-fit w-fit flex items-center">
+          <p className="text-deftext text-sm">TOTAL: </p>
+          <p className="text-[#181C2E] text-[30px] ml-2">$800 </p>
         </div>
-      </button>
-      
+        <div className="h-6"></div>
+        <Button text={"PLACE ORDER"} nav={"/main/completeorder"} />
+      </div>
+
     </div>
   )
 }

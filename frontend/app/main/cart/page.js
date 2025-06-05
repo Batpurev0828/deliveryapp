@@ -25,11 +25,11 @@ export default function Home() {
       <div className="flex flex-col w-full h-fit mt-5 space-y-8">
         <CartItem title={"Chicken Burger"} price={"$40"} image={"https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"}/>
         <CartItem title={"Beef Burger"} price={"$40"} image={"https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg?im=AspectCrop=(16,9);"}/>
-        <CartItem title={"Chicken Burger"} price={"$40"} image={"https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"}/>
-        <CartItem title={"Beef Burger"} price={"$40"} image={"https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg?im=AspectCrop=(16,9);"}/>
-        <CartItem title={"Chicken Burger"} price={"$40"} image={"https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"}/>
-        <CartItem title={"Beef Burger"} price={"$40"} image={"https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg?im=AspectCrop=(16,9);"}/>
-        <CartItem title={"Chicken Burger"} price={"$40"} image={"https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"}/>
+        <CartItem title={"Cheese Burger"} price={"$40"} image={"https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"}/>
+        <CartItem title={"Normal Burger"} price={"$40"} image={"https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg"}/>
+        <CartItem title={"Hamburger"} price={"$40"} image={"https://www.certifiedangusbeef.com/_next/image?url=https%3A%2F%2Fappetizing-cactus-7139e93734.media.strapiapp.com%2FClassic_Smashed_Burger_111c4bfdb7.jpeg&w=1920&q=75"}/>
+        <CartItem title={"Whopper Burger"} price={"$40"} image={"https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg?im=AspectCrop=(16,9);"}/>
+        <CartItem title={"Bacon Burger"} price={"$40"} image={"https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg"}/>
         <CartItem title={"Beef Burger"} price={"$40"} image={"https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg?im=AspectCrop=(16,9);"}/>
       </div>
       <div className="fixed bottom-0 left-0 w-full h-[184px] bg-icon rounded-t-3xl p-6">
