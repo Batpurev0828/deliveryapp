@@ -22,7 +22,7 @@ export default function Home() {
       <p className='text-deftext text-sm mx-auto mt-2 text-center w-[215px] mb-auto'>
         You successfully made a payment, enjoy our service!
       </p>
-      <Button text={"TRACK ORDER"}/>
+      <Button text={"TRACK ORDER"} nav={"/main/track"}/>
     </div>
   )
 }
